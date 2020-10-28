@@ -209,7 +209,7 @@ body {
 
 .quake {
   font-family: "Work Sans", sans-serif;
-  color: #e07b39;
+  color: darkslateblue;
 }
 
 .quakemode {
@@ -341,6 +341,7 @@ body {
 
 .quakecontainer:hover .quakemode {
   display: inline;
+  color: red;
 }
 
 .quakecontainer:hover .normal {

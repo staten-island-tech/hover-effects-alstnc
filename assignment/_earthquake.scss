@@ -2,7 +2,7 @@
 
 .quake {
   font-family: "Work Sans", sans-serif;
-  color: color(orange);
+  color: color(blue);
 }
 
 .quakemode {
@@ -71,6 +71,7 @@
 .quakecontainer:hover .quakemode {
   //alternate text unhides itself
   display: inline;
+  color: red;
 }
 
 .quakecontainer:hover .normal {
