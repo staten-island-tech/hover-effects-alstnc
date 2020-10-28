@@ -1,0 +1,55 @@
+@import "_variables.scss";
+
+.monkey {
+  font-family: "Work Sans", sans-serif;
+  margin: 2rem;
+  border: 0;
+  background: none;
+  color: color(blue);
+  position: relative;
+  padding: 10rem 10rem;
+  box-sizing: border-box;
+  transition: font-size 0.3s;
+}
+
+.monkey::before,
+.monkey::after {
+  box-sizing: inherit;
+  position: absolute;
+  content: "";
+  border: 0.75rem solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.monkey::after {
+  bottom: 0;
+  right: 0;
+}
+
+.monkey::before {
+  top: 0;
+  left: 0;
+}
+
+.monkey:hover {
+  font-size: 5rem;
+}
+.monkey:hover::before,
+.monkey:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.monkey:hover::before {
+  border-top-color: color(blue);
+  border-right-color: color(blue);
+  transition: width 0.3s ease-out, height 0.3s ease-out 0.3s;
+}
+
+.monkey:hover::after {
+  border-bottom-color: color(blue);
+  border-left-color: color(blue);
+  transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s,
+    height 0.3s ease-out 1s;
+}

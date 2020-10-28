@@ -1,5 +1,7 @@
 @import "_variables.scss";
 @import "_swap.scss";
+@import "_button.scss";
+@import "_boxdraw.scss";
 
 header {
   margin: 10rem;
@@ -37,7 +39,7 @@ header {
 .box {
   background-color: peachpuff;
   height: auto;
-  margin: 8rem;
+  margin: 4rem;
   border-radius: 2rem;
   opacity: 0.85;
   padding: 5rem;
