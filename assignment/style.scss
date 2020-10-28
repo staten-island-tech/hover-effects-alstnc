@@ -2,6 +2,8 @@
 @import "_swap.scss";
 @import "_button.scss";
 @import "_boxdraw.scss";
+@import "_zoom.scss";
+@import "_earthquake.scss";
 
 header {
   margin: 10rem;
@@ -37,7 +39,7 @@ header {
 }
 
 .box {
-  background-color: peachpuff;
+  background-color: color(peach);
   height: auto;
   margin: 4rem;
   border-radius: 2rem;

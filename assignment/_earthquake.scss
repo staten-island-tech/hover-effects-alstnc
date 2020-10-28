@@ -1,0 +1,79 @@
+@import "_variables.scss";
+
+.quake {
+  font-family: "Work Sans", sans-serif;
+  color: color(orange);
+}
+
+.quakemode {
+  //hides the alternate text
+  display: none;
+}
+
+.quakecontainer {
+  //make it easier to hover over
+  padding: 5rem;
+}
+
+@keyframes earthquake {
+  //not sure if we're allowed to use this, but i found it online and i thought it was cool
+  //every 10 percent = 0.1s. 100% = 1s.
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+    opacity: 100%;
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+    opacity: 75%;
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+    opacity: 50%;
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+    opacity: 25%;
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+    opacity: 0%;
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+    opacity: 25%;
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+    opacity: 50%;
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+    opacity: 75%;
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+    opacity: 100%;
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.quakecontainer:hover {
+  //when hover over the container, start the animation on a loop
+  animation: earthquake 1s ease;
+  animation-iteration-count: infinite;
+}
+
+.quakecontainer:hover .quakemode {
+  //alternate text unhides itself
+  display: inline;
+}
+
+.quakecontainer:hover .normal {
+  //main text hides itself
+  display: none;
+}
