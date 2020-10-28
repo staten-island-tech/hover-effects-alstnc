@@ -1,0 +1,19 @@
+$colors: (
+  blue: darkslateblue,
+  beige: #fce5cd,
+  brown: #80391e,
+  orange: #e07b39,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: color(beige);
+}

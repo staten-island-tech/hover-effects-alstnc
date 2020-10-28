@@ -1,0 +1,28 @@
+@import "_variables.scss";
+
+.swap {
+  margin: auto;
+  width: auto;
+}
+
+.box-1 {
+  background-color: peachpuff;
+  height: 55rem;
+  width: 75rem;
+  margin: 8rem;
+  border-radius: 2rem;
+  opacity: 0.85;
+  padding: 5rem;
+}
+
+.swap img {
+  width: 60rem;
+  height: 40rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: opacity 1s ease-in-out;
+}
+.swap img.top:hover {
+  opacity: 0;
+}
